@@ -361,10 +361,18 @@ a {
        color: #F2F2F2; 
     }
 
+    .wrap a {
+        color: #F2F2F2;
+    }
+
     .article_quote::before {
         content: url(../img/quote-white.svg);
     }
 
+    .footer_for_article {
+        background-color: #282E3A;
+    }
+ 
     .share_facebook {
         background-image: url(../img/facebook-white.svg);
     }
