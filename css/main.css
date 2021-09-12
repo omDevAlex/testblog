@@ -1,0 +1,342 @@
+/* Fonts */
+ 
+@font-face {
+    font-family: 'Roboto-Slab';
+    src: url("../fonts/RobotoSlab-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Roboto-medium';
+    src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Georgia-italic';
+    src: url("../fonts/georgia-italic.ttf") format("truetype");
+}
+
+/* style */
+
+* {
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+.bold_text {
+    font-family: 'Roboto-bold', serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article {
+    font-family: 'Roboto-regular', serif;
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+.article h1 {
+    font-family: 'Roboto-Slab', serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.article_info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0 60px;
+}
+
+.article_p {
+    line-height: 30px;
+}
+
+.article_img {
+    margin: 55px 0;
+}
+
+.article h2 {
+    margin: 55px 0 30px;
+}
+
+.article_quote {
+    font-family: 'Georgia-italic', serif;
+    font-size: 28px;
+    line-height: 44px;
+    text-align: left;
+    margin: 50px 0;
+    padding: 0 50px 0 80px;
+    position: relative; 
+}
+
+.article_quote::before {
+    content: url("../img/quotes.svg");
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 5px; 
+}
+
+.footer_for_article {
+    max-width: 1360px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    border-bottom: 6px solid;
+    border-image: linear-gradient(to right, #01daf2 0%, #f202c9 100%);
+    border-image-slice: 1;
+}
+
+.footer_for_article .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.author_avatar {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.author_info {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.about_author {
+    position: relative;
+    padding-left: 95px;
+    margin: 50px 0;
+}
+
+.about_author::before {
+    content: "author";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -0.625em;
+    font-family: 'Roboto-regular', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.author_name {
+    font-family: 'Roboto-Slab', serif;
+    font-size: 22px;
+    position: relative;
+    top: -3px;    
+}
+
+.author_skils {
+    font-family: 'Roboto-regular', serif;
+    font-size: 14px;
+    max-width: 240px;
+    line-height: 19px;
+    position: relative;
+    top: 3px;
+}
+
+.share_link {
+    position: relative;
+    padding-left: 90px;
+    padding-top: 3px;
+}
+
+.share_link a {
+    margin-left: 20px;
+}
+
+.share_link a img {
+    color: #fff;
+}
+
+.share_link::before {
+    content: "share with";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -0.625em;
+    font-family: 'Roboto-regular', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.comments {
+    margin: 90px 0 100px;
+}
+
+.hide_comments {
+    font-family: 'Roboto-regular', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.comment {
+    margin-top: 50px;
+    padding-left: 40px;
+}
+
+.comment_author {
+    font-family: 'Roboto-bold', serif;
+    font-size: 14px;
+}
+
+.comment_date {
+    font-family: 'Roboto-regular', serif;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.comment_text {
+    font-family: 'Roboto-regular', serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+    max-width: 470px;
+}
+
+.add_comment {
+    max-width: 662px;
+    margin-top: 75px;
+}
+
+.add_comment textarea {
+    background-color: #F3F3F3;
+    border: none;
+    padding: 20px 25px;
+    resize: none;
+    margin-bottom: 10px;
+    font-family: 'Roboto-regular', serif;
+    font-size: 14px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_name {
+    background-color: #F3F3F3;
+    border: none;
+    padding: 13px 25px;
+    width: 380px;
+    font-family: 'Roboto-regular', serif;
+    font-size: 14px;
+}
+
+.submit_button {
+    border: none;
+    background-color: #f3f3f3;
+    padding: 13px 45px;
+    box-sizing: border-box;
+    font-family: 'Roboto-medium', serif;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    transition: ease .3s;
+}
+    
+.submit_button:before {
+    background-image: linear-gradient(to right, #01daf2 0%, #f202c9 100%);
+    content: '';    
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0; 
+    left: -141px;
+    width: 100%;
+    z-index: -100;
+    transition: ease .3s;
+}
+
+.submit_button:hover {
+    color: #fff;
+}
+    
+.submit_button:hover:before {
+    left: 0;
+}
+
+.related_container {
+    margin: 0 auto 100px;
+    max-width: 1134px;
+    border-top: 1px solid #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 130px;
+}
+
+.related_container:before {
+    content: 'Related articles';
+    font-family: 'Roboto-regular', serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 80px;
+}
+
+.related_article {
+    width: 30%;
+}
+
+.related_article img {
+    width: 340px;
+    height: 190px;
+    object-fit: cover;
+}
+
+.related_article h3 {
+    font-family: 'Roboto-Slab', serif;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+
+.related_article p {
+    font-family: 'Roboto-regular', serif;
+    font-size: 16px;
+    margin-top: 16px;
+    line-height: 24px;
+}
+
+.related_public_date {
+    font-family: 'Roboto-regular', serif;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+    a {
+        color: black;
+    }
+
+    .wrap {
+       background-color: #191919;
+    }
+
+
+}
