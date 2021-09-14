@@ -40,7 +40,7 @@ a {
 }
 
 .wrap {
-    padding-top: 100px;
+    
 }
 
 .container {
@@ -48,9 +48,50 @@ a {
     margin: 0 auto;
 }
 
+.nav {
+    max-width: 1360px;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    border-bottom: 6px solid;
+    border-image: linear-gradient(to right, #01daf2 0%, #f202c9 100%);
+    border-image-slice: 1;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.menu {
+    font-family: 'Roboto-medium', serif;
+    font-size: 20px;
+    padding-left: 0px;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 100px;
+    line-height: 28px;  
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.what_theme {
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/icon-moon.svg);
+    background-repeat: no-repeat
+}
+
 .article {
     font-family: 'Roboto-regular', serif;
     font-size: 18px;
+    padding-top: 100px;
 }
 
 .article h1 {
@@ -365,11 +406,17 @@ a {
         color: #F2F2F2;
     }
 
+    .what_theme {
+        width: 32px;
+        height: 32px;
+        background-image: url(../img/icon-sun.svg);
+    }
+
     .article_quote::before {
         content: url(../img/quote-white.svg);
     }
 
-    .footer_for_article {
+    .footer_for_article, .nav {
         background-color: #282E3A;
     }
  
@@ -393,8 +440,13 @@ a {
 }
 
 @media (max-width: 991px) {
+    .nav .container {
+        padding: 40px 15px;
+        max-width: 770px;
+    }
+
     .article {
-        padding: 0px 15px;
+        padding: 65px 15px 0px;
     }
 
     .footer_for_article .container {
@@ -429,12 +481,12 @@ a {
 }
 
 @media (max-width: 767px) {
-    .wrap {
-        padding-top: 60px;
+    .nav .container {
+        padding: 30px 15px;
     }
 
     .article {
-        padding: 0px 10px;
+        padding: 65px 15px 0px;
     }
 
     .article h1 {
@@ -490,6 +542,10 @@ a {
 }
 
 @media (max-width: 670px) {
+    .menu li {
+        margin-right: 50px; 
+    }
+
     .comments {
         margin: 70px 0;
     }
@@ -514,6 +570,28 @@ a {
 }
 
 @media (max-width: 490px) {
+    .nav .container {
+        padding: 15px 15px;
+        display: block;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        max-width: 320px;
+
+    }
+
+    .menu li {
+        display: block;
+        line-height: 36px;
+        margin-right: 0px;
+    }
+
+    .what_theme {
+        margin-top: 10px;
+    }
+
     .about_author {
         padding-left: 18px;
     }
