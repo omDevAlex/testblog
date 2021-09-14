@@ -81,12 +81,12 @@ a {
     text-decoration: none;
 }
 
-.what_theme {
+/* .what_theme {
     width: 28px;
     height: 28px;
     background-image: url(../img/icon-moon.svg);
     background-repeat: no-repeat
-}
+} */
 
 .article {
     font-family: 'Roboto-regular', serif;
@@ -406,11 +406,11 @@ a {
         color: #F2F2F2;
     }
 
-    .what_theme {
+    /* .what_theme {
         width: 32px;
         height: 32px;
         background-image: url(../img/icon-sun.svg);
-    }
+    } */
 
     .article_quote::before {
         content: url(../img/quote-white.svg);
@@ -588,9 +588,9 @@ a {
         margin-right: 0px;
     }
 
-    .what_theme {
+    /* .what_theme {
         margin-top: 10px;
-    }
+    } */
 
     .about_author {
         padding-left: 18px;
